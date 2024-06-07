@@ -19,6 +19,7 @@ function App() {
       id: (colaboradores.length + 1).toString(),
       nombre, correo, edad, cargo, telefono
     };
+
     setColaboradores([...colaboradores, nuevoColaborador]);
   };
 
