@@ -9,16 +9,16 @@ function App() {
   const [colaboradores, setColaboradores] = useState(BaseColaboradores);
   const [buscar, setBuscar] = useState("");
 
-  const agregarColaborador = (nombre) => {
+  const agregarColaborador = (nombre, correo, edad, cargo, telefono) => {
     const nuevoColaborador = {
       id: (colaboradores.length + 1).toString(),
       nombre,
-      correo: "",
-      edad: "",
-      cargo: "",
-      telefono: "",
+      correo,
+      edad,
+      cargo,
+      telefono,
     };
-    console.log(nombre);
+
     setColaboradores([...colaboradores, nuevoColaborador]);
   };
 
