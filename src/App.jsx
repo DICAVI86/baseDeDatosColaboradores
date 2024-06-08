@@ -40,25 +40,29 @@ function App() {
   return (
     <>
       <h1>Lista de colaboradores</h1>
-      <Container>
+      <Container fluid className="container">
         <Row>
-          <Col>
+          <Col className="buscador" >
             <Buscador buscar={buscar} setBuscar={setBuscar} />
           </Col>
         </Row>
 
         <Row>
-          <Col md={6} sm={12}>
-            <Listado colaboradores={colaboradoresFiltrados} />
-          </Col>
-          <Col>
+          
+          <Col md={4} sm={12} className="formulario">
             <Formulario
               agregarColaborador={agregarColaborador}
               setMensaje={setMensaje}
               setTipo={setTipo}
+              className="input"
             />
             <Alert mensaje={mensaje} tipo={tipo} />
           </Col>
+
+          <Col md={8} sm={12} className="listado" >
+            <Listado colaboradores={colaboradoresFiltrados} />
+          </Col>
+          
         </Row>
       </Container>
     </>

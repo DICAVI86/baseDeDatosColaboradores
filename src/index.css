@@ -66,3 +66,55 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Arreglos CSS  */
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: lightseagreen;
+  text-shadow: #535bf2 2px 1px;
+}
+
+.container {
+  border-radius: 15px;
+  padding: 30px;
+  background-color: lightblue;
+  font-size: 12px;
+  box-shadow: #535bf2 2px 2px;
+}
+
+.buscador {
+  padding: 20px 0px;
+}
+
+.listado {
+  padding: 10px;
+}
+
+.formulario {
+  padding: 0px 16px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.formulario .form-control{
+  margin: 10px;
+  font-size: 12px;
+}
+
+.formulario .btn {
+  margin: 10px;
+}
+
+table {
+  background-color: rgb(143, 200, 218);
+}
+
+.table th, 
+.table td {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
