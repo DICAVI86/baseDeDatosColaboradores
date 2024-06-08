@@ -49,6 +49,7 @@ function Formulario({ agregarColaborador, setMensaje, setTipo }) {
   return (
     <Form onSubmit={handleSubmit}>
       <Form.Group>
+        <h3>Agregar Colaborador</h3>
         <Form.Control
           type="text"
           value={nombreColaborador}
